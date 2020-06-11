@@ -37,12 +37,6 @@ function todoList() {
     }
 }
 
-//working with save button and setting info to local storage
-
-
-
-
-
 
 //changing colors according time 
 
@@ -71,6 +65,7 @@ function myTask() {
         $(`#textarea${[i]}`).text(time);
     }
 }
+//working with save button and setting info to local storage
 function saveInfo(e) {
     e.preventDefault();
   //console.log("click")
