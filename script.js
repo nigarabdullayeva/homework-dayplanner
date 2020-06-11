@@ -48,7 +48,7 @@ function todoList() {
 
 function replaceColor(){
  var currentTime = moment().hours();
- //console.log(currentTime);
+ console.log(currentTime);
      
     for (i=9; i <= 17; i++){
      var addCol = $(`#textarea${[i]}`);
@@ -56,10 +56,10 @@ function replaceColor(){
      if (addCol.attr("value") == currentTime) {
         addCol.addClass("present");
      }
-     else if (addCol.attr("value") > currentTime) {
+     else if (addCol.attr("value") < currentTime) {
         addCol.addClass("past");
      }
-     else if (addCol.attr("value") < currentTime) {
+     else if (addCol.attr("value") > currentTime) {
         addCol.addClass("future")
      }
    }
